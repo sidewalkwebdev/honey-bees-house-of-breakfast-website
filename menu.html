@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Menu - Honey Bee's House of Breakfast</title>
+    <meta
+      name="description"
+      content="Full menu for Honey Bee's House of Breakfast. Pupusas, El Clásico, Pancakes, Soups, and American Comfort Food in West Adams."
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand logo-font" href="index.html">
+          <i class="bi bi-hexagon-fill"></i> HONEY BEE'S<br />
+          <span style="font-size: 0.7em; margin-left: 25px"
+            >HOUSE OF BREAKFAST</span
+          >
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          style="border: none"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourstory.html">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Location</a>
+            </li>
+          </ul>
+          <button
+            class="btn btn-primary shadow-sm"
+            onclick="window.location.href='order.html'"
+          >
+            ORDER NOW
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="menu-hero">
+      <div class="container text-center">
+        <h1 class="logo-font display-4">Our Menu</h1>
+        <p class="lead mb-0">
+          Authentic Salvadoran Soul Food & American Breakfast Classics.
+        </p>
+      </div>
+    </header>
+
+    <nav class="category-nav" id="categoryNav">
+      <div class="container">
+        <button class="category-toggle" id="categoryToggle">
+          <span>Jump to Category</span>
+          <i class="bi bi-caret-down-fill toggle-icon"></i>
+        </button>
+        <ul class="category-list" id="categoryList">
+          <li><a href="#popular" class="category-link">Most Popular</a></li>
+          <li><a href="#pupusas" class="category-link">Pupusas & Sweets</a></li>
+          <li>
+            <a href="#salvadoran" class="category-link">Salvi Breakfast</a>
+          </li>
+          <li>
+            <a href="#american" class="category-link"
+              >American & House Special</a
+            >
+          </li>
+          <li><a href="#lunch" class="category-link">Lunch & Soups</a></li>
+          <li><a href="#drinks" class="category-link">Drinks</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section
+      id="popular"
+      class="py-5"
+      style="background-color: var(--warm-beige)"
+    >
+      <div class="container">
+        <h2 class="text-center mb-2 menu-title">Crowd Favorites</h2>
+        <p class="text-center mb-5 text-muted">
+          Our top 3 best-sellers, made with love.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="popular-item-card">
+              <img
+                src="assets/el-clasico-menu.jpg"
+                alt="El Clasico Salvadoran Breakfast"
+                class="popular-img"
+              />
+              <div class="popular-overlay">
+                <span class="badge bg-warning text-dark mb-2 fw-bold"
+                  >$16.99</span
+                >
+                <h3 class="logo-font">El Clásico</h3>
+                <p class="small mb-0">
+                  The ultimate breakfast. Scrambled eggs with veggies,
+                  casamiento (rice & beans), fried plantains, avocado, cheese,
+                  sour cream & handmade tortillas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="popular-item-card">
+              <img
+                src="assets/house-special-menu.jpg"
+                alt="House Special Pancakes"
+                class="popular-img"
+              />
+              <div class="popular-overlay">
+                <span class="badge bg-warning text-dark mb-2 fw-bold"
+                  >$14.50</span
+                >
+                <h3 class="logo-font">The House Special</h3>
+                <p class="small mb-0">
+                  Best value! 2 fluffy pancakes, 2 eggs, crispy hash browns, and
+                  your choice of 2 sausage patties or bacon.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="popular-item-card">
+              <img
+                src="assets/huevos-rancheros-menu.jpg"
+                alt="Huevos Rancheros"
+                class="popular-img"
+              />
+              <div class="popular-overlay">
+                <span class="badge bg-warning text-dark mb-2 fw-bold"
+                  >$15.99</span
+                >
+                <h3 class="logo-font">Huevos Rancheros</h3>
+                <p class="small mb-0">
+                  Delicious eggs served with our house-made tomato sauce with
+                  veggies, rice, beans, sour cream and handmade tortillas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pupusas" class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="menu-title">Pupusas & Sweets</h2>
+          <p class="text-muted">Handmade corn tortillas and sweet treats.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="menu-card h-100">
+              <div class="text-center mb-3">
+                <i
+                  class="bi bi-circle-fill menu-icon"
+                  style="font-size: 1.5rem"
+                ></i>
+              </div>
+              <h3 class="menu-category-title text-center mb-4">
+                Pupusas & Appetizers
+              </h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Rebueltas (Mix)</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$3.79</span>
+                  </div>
+                  <small class="description-text"
+                    >Cheese and pork pupusa. (Beans added only at
+                    request).</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Cheese & Loroco</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$3.79</span>
+                  </div>
+                  <small class="description-text"
+                    >Stuffed with cheese and Loroco (a Salvadoran
+                    flower).</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Pastelitos de Carne</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$14.99</span>
+                  </div>
+                  <small class="description-text"
+                    >Deep fried meat and veggie pies. Very good to share.</small
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="menu-card h-100">
+              <div class="text-center mb-3">
+                <i
+                  class="bi bi-heart-fill menu-icon"
+                  style="font-size: 1.5rem"
+                ></i>
+              </div>
+              <h3 class="menu-category-title text-center mb-4">Sweet Treats</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Sweet Fried Plantains</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$10.99</span>
+                  </div>
+                  <small class="description-text"
+                    >Served with sour cream and beans.</small
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="salvadoran"
+      class="py-5"
+      style="background-color: var(--warm-beige)"
+    >
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="menu-title">Salvadoran Style Breakfast</h2>
+          <p class="text-muted">
+            Hearty plates served with handmade corn tortillas.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="menu-card h-100">
+              <h3 class="logo-font text-brown mb-4">The Favorites</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">El Clásico</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$16.99</span>
+                  </div>
+                  <small class="description-text"
+                    >Scrambled eggs with veggies, casamiento (rice & beans),
+                    fried plantains, avocado, cheese, sour cream &
+                    tortillas.</small
+                  >
+                </li>
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">El Super Clásico</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$18.99</span>
+                  </div>
+                  <small class="description-text"
+                    >Everything in El Clásico PLUS imported Salvadoran
+                    Chorizo.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">The House Skillet</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$19.99</span>
+                  </div>
+                  <small class="description-text"
+                    >Potatoes mixed with veggies, topped with chorizo, eggs,
+                    cheese, and cilantro.</small
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="menu-card h-100">
+              <h3 class="logo-font text-brown mb-4">Traditional Plates</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Huevos Rancheros</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$15.99</span>
+                  </div>
+                  <small class="description-text"
+                    >House made tomato sauce with veggies, rice, beans, sour
+                    cream and handmade tortillas.</small
+                  >
+                </li>
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Huevos con Chorizo</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$15.19</span>
+                  </div>
+                  <small class="description-text"
+                    >Eggs scrambled with chorizo. Served with rice, beans, sour
+                    cream & tortillas.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Huevos con Jamón</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$15.99</span>
+                  </div>
+                  <small class="description-text"
+                    >Ham mixed with eggs, rice, beans, sour cream &
+                    tortillas.</small
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="american" class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="menu-title">American Favorites & Omelettes</h2>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-8">
+            <div class="menu-card h-100">
+              <div class="text-center mb-3">
+                <i class="bi bi-egg-fried menu-icon"></i>
+              </div>
+
+              <div
+                class="p-3 mb-4 rounded"
+                style="
+                  background-color: var(--warm-beige);
+                  border: 1px solid var(--honey-yellow);
+                "
+              >
+                <div
+                  class="d-flex w-100 justify-content-between align-items-center"
+                >
+                  <span class="item-name fs-5"
+                    ><i class="bi bi-star-fill text-warning me-2"></i> The House
+                    Special</span
+                  >
+                  <span class="item-price fs-5">$14.50</span>
+                </div>
+                <small class="description-text text-dark">
+                  2 pancakes, 2 eggs, hash browns, 2 sausage patties or bacon.
+                </small>
+              </div>
+
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Steak Omelette</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$17.99</span>
+                  </div>
+                  <small class="description-text"
+                    >Eggs, lettuce, tomatoes, avocado and french fries.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Veggie Omelette</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$15.99</span>
+                  </div>
+                  <small class="description-text"
+                    >Green peppers, onion, tomatoes, spinach. Served with
+                    hashbrown and toast.</small
+                  >
+                </li>
+
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Steak Breakfast</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$18.99</span>
+                  </div>
+                  <small class="description-text"
+                    >Comes with eggs, lettuce, tomatoes, avocado and french
+                    fries.</small
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="lunch"
+      class="py-5"
+      style="background-color: var(--warm-beige)"
+    >
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="menu-title">Lunch Specials & Soups</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="menu-card h-100">
+              <h3 class="logo-font text-brown mb-4">Lunch Plates</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Carne Asada / Steak</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$21.99</span>
+                  </div>
+                  <small class="description-text"
+                    >Grilled marinated steak, grilled onions, rice, beans,
+                    salad, avocado & tortillas.</small
+                  >
+                </li>
+                <li class="menu-item flex-column align-items-start mb-4">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Bisteck Encebollado</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$21.99</span>
+                  </div>
+                  <small class="description-text"
+                    >Grilled steak with sautéed onions, rice, beans, salad &
+                    tortillas.</small
+                  >
+                </li>
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Camarones al Mojo de Ajo</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$18.99</span>
+                  </div>
+                  <small class="description-text"
+                    >Garlic marinated shrimp with onions, rice, beans, small
+                    salad & tortillas.</small
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="menu-card h-100">
+              <h3 class="logo-font text-brown mb-4">Soups (Sopas)</h3>
+              <ul class="menu-list">
+                <li class="menu-item flex-column align-items-start mb-3">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Sopa de Gallina (Hen)</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$21.50</span>
+                  </div>
+                  <small class="description-text"
+                    >Tender hen, zucchini, potatoes, carrots. Served with rice,
+                    beans, salad & tortillas.</small
+                  >
+                </li>
+                <li class="menu-item flex-column align-items-start mb-3">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Sopa de Res (Beef)</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$18.99</span>
+                  </div>
+                  <small class="description-text"
+                    >Beef with bone and mixed vegetables. Served with rice &
+                    tortillas.</small
+                  >
+                </li>
+                <li class="menu-item flex-column align-items-start mb-3">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Sopa de Pollo (Chicken)</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$17.99</span>
+                  </div>
+                  <small class="description-text"
+                    >Half chicken, rice, vegetables, avocado. Served with rice &
+                    tortillas.</small
+                  >
+                </li>
+                <li class="menu-item flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <span class="item-name">Sopa de Camarón y Pescado</span>
+                    <span class="dots"></span>
+                    <span class="item-price">$18.89</span>
+                  </div>
+                  <small class="description-text"
+                    >Shrimp and fish in spicy red broth with veggies. Served
+                    with rice, beans & tortillas.</small
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="drinks" class="py-5 bg-white">
+      <div class="container">
+        <h2 class="text-center mb-5 menu-title">Drinks</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="menu-card text-center">
+              <ul class="menu-list row">
+                <li class="col-md-12 mb-4">
+                  <div
+                    class="d-flex justify-content-between align-items-center p-2 rounded"
+                    style="background-color: var(--warm-beige)"
+                  >
+                    <span class="item-name fw-bold"
+                      >Ensalada de Fruta (Fruit Salad Drink)</span
+                    >
+                    <span class="item-price">$5.50</span>
+                  </div>
+                  <small class="d-block text-center mt-2 text-muted"
+                    >Famous Salvadoran drink with apples, pineapple, peach, and
+                    nance.</small
+                  >
+                </li>
+                <li class="col-md-6 mb-3 d-flex justify-content-between">
+                  <span>Coke Bottle</span><span class="dots"></span
+                  ><span class="item-price">$4.00</span>
+                </li>
+                <li class="col-md-6 mb-3 d-flex justify-content-between">
+                  <span>Fanta Orange</span><span class="dots"></span
+                  ><span class="item-price">$4.50</span>
+                </li>
+                <li class="col-md-6 mb-3 d-flex justify-content-between">
+                  <span>Hot Tea (Herbal/Green/Black)</span
+                  ><span class="dots"></span
+                  ><span class="item-price">$3.75</span>
+                </li>
+                <li class="col-md-6 mb-3 d-flex justify-content-between">
+                  <span>Soda Can (Coke/Pepsi)</span><span class="dots"></span
+                  ><span class="item-price">$2.39</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="footer-section">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-md-4">
+            <h4 class="footer-heading logo-font">Visit Us</h4>
+            <ul style="list-style: none; padding: 0">
+              <li class="mb-3">
+                <i class="bi bi-house-door-fill text-warning me-2"></i>
+                <strong>Address:</strong><br />
+                <a
+                  href="https://maps.google.com/?q=4715+W+Adams+Blvd,+Los+Angeles,+CA+90016"
+                  target="_blank"
+                  class="contact-link text-white-50 text-decoration-none"
+                >
+                  4715 W Adams Blvd<br />
+                  Los Angeles, CA 90016
+                </a>
+
+                <div class="map-buttons mt-3 d-flex gap-2 flex-wrap">
+                  <a
+                    href="https://maps.apple.com/?q=Honey+Bee's+House+of+Breakfast,+4715+W+Adams+Blvd,+Los+Angeles"
+                    class="btn-map apple-map"
+                    target="_blank"
+                  >
+                    <i class="bi bi-apple me-1"></i> Apple Maps
+                  </a>
+
+                  <a
+                    href="https://maps.google.com/?q=4715+W+Adams+Blvd,+Los+Angeles,+CA+90016"
+                    class="btn-map google-map"
+                    target="_blank"
+                  >
+                    <i class="bi bi-google me-1"></i> Google Maps
+                  </a>
+                </div>
+              </li>
+
+              <li class="mb-3">
+                <i class="bi bi-telephone-fill text-warning me-2"></i>
+                <strong>Phone:</strong><br />
+                <a
+                  href="tel:3239980683"
+                  class="contact-link text-white-50 text-decoration-none"
+                >
+                  (323) 998-0683
+                </a>
+              </li>
+
+              <li class="mb-3 d-flex align-items-start">
+                <i class="bi bi-clock-fill text-warning me-2 mt-1"></i>
+                <div>
+                  <strong>Hours:</strong><br />
+                  Wed - Mon: 8:00 AM - 3:00 PM<br />
+                  <span class="text-danger fw-bold">Tue: CLOSED</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h4 class="footer-heading logo-font">Find Us</h4>
+            <p class="small text-white-50">
+              Located in the heart of West Adams.
+            </p>
+            <iframe
+              class="map-container"
+              src="https://maps.google.com/maps?q=4715%20W%20Adams%20Blvd%2C%20Los%20Angeles%2C%20CA%2090016&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="200"
+              style="border: 0; border-radius: 10px"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+
+          <div class="col-md-4">
+            <h4 class="footer-heading logo-font">Quick Links</h4>
+            <ul style="list-style: none; padding: 0">
+              <li><a href="ourstory.html" class="footer-link">Our Story</a></li>
+              <li><a href="menu.html" class="footer-link">Full Menu</a></li>
+              <li><a href="order.html" class="footer-link">Order Online</a></li>
+            </ul>
+
+            <div class="mt-4">
+              <h4 class="footer-heading logo-font fs-5">Follow Us</h4>
+              <div class="d-flex gap-3">
+                <a
+                  href="#"
+                  aria-label="Instagram"
+                  class="text-white fs-4 footer-social"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a
+                  href="#"
+                  aria-label="Facebook"
+                  class="text-white fs-4 footer-social"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a
+                  href="#"
+                  aria-label="TikTok"
+                  class="text-white fs-4 footer-social"
+                  ><i class="bi bi-tiktok"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <p class="small text-white-50">
+                Love the pancakes? Leave a review!
+              </p>
+              <div class="d-flex gap-2">
+                <a
+                  href="https://www.yelp.com/biz/honey-bees-house-of-breakfast-los-angeles"
+                  target="_blank"
+                  class="btn btn-outline-light btn-sm rounded-pill px-3"
+                >
+                  <i class="bi bi-yelp text-danger"></i> Yelp
+                </a>
+
+                <a
+                  href="https://maps.google.com/?q=4715+W+Adams+Blvd,+Los+Angeles,+CA+90016"
+                  target="_blank"
+                  class="btn btn-outline-light btn-sm rounded-pill px-3"
+                >
+                  <i class="bi bi-google text-primary"></i> Google
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5 pt-4 border-top border-secondary">
+          <p class="small text-white-50 mb-0">
+            © 2026 Honey Bee's House of Breakfast. Family Owned.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Toggle for mobile category nav
+      document
+        .getElementById("categoryToggle")
+        .addEventListener("click", function () {
+          const categoryList = document.getElementById("categoryList");
+          categoryList.classList.toggle("active");
+          const icon = this.querySelector(".toggle-icon");
+
+          if (categoryList.classList.contains("active")) {
+            icon.classList.remove("bi-caret-down-fill");
+            icon.classList.add("bi-caret-up-fill");
+          } else {
+            icon.classList.remove("bi-caret-up-fill");
+            icon.classList.add("bi-caret-down-fill");
+          }
+        });
+
+      // Close menu when clicking a link on mobile
+      document.querySelectorAll(".category-link").forEach((link) => {
+        link.addEventListener("click", function () {
+          if (window.innerWidth <= 768) {
+            document.getElementById("categoryList").classList.remove("active");
+            document
+              .querySelector(".toggle-icon")
+              .classList.remove("bi-caret-up-fill");
+            document
+              .querySelector(".toggle-icon")
+              .classList.add("bi-caret-down-fill");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
